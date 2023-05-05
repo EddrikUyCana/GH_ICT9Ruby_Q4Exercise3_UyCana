@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript CM to Feet</title>
+</head>
+<body>
+	<h1>CM to Feet Converter</h1>
+	<input type="text" id="id1" placeholder="CM Value"><br>
+	<button onclick="Feet()">Convert</button>
+	<p id="feet"></p>
+
+	<input type="text" id="id2" placeholder="Feet Value"><br>
+	<button onclick="CM()">Convert</button>
+	<p id="cm"></p>
+
+	<script>
+		function Feet() {
+			var x = document.getElementById('id1').value;
+			var feet = x * 0.0328084
+			document.getElementById('feet').innerHTML = "The answer is " + feet + " CM.";
+		}
+		function CM() {
+			var x = document.getElementById('id2').value;
+			var cm = x * 30.48
+			document.getElementById('cm').innerHTML = "The answer is " + cm + " feet.";
+		}
+	</script>
+</body>
+</html>
